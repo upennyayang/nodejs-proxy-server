@@ -13,13 +13,14 @@ let argv = require('yargs')
 // Get the --port value
 let port = argv.port || argv.host === '127.0.0.1' ? 8000 : 80
 
-let destinationUrl = argv.host + ':' + port
+let destinationUrl = argv.url || argv.host + ':' + port
 
 // Set logging
 let logName = argv.log || "debug.log"
 let logPath = logName && path.join(__dirname, logName)
 let logStream = logPath ? fs.createWriteStream(logPath) : process.stdout
 
+console.log("destURL: " + destinationUrl)
 console.log("logPath: " + logPath)
 
 http.createServer((req, res) => {
