@@ -1,0 +1,24 @@
+{
+  "name": "prework",
+  "version": "1.0.0",
+  "description": "Codepath's Introduction to NodeJS: Prework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon --exec babel-node -- --optional strict --stage 1 -- index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upennyayang/nodejs-prework.git"
+  },
+  "author": "Yayang Tian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upennyayang/nodejs-prework/issues"
+  },
+  "homepage": "https://github.com/upennyayang/nodejs-prework#readme",
+  "dependencies": {
+    "request": "^2.55.0",
+    "yargs": "^3.8.0"
+  }
+}
